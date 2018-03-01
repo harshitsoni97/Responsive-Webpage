@@ -5,24 +5,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script type="text/javascript">
-    $(window).on('scroll',function(){
-        if($(window).scrollTop()){
-            $('nav').addClass('black');
-        }
-        else{
-            $('nav').removeClass('black');
-        }
-    })
-    </script>
-         <script>
-     $(function() {
-        $('nav li a').click(function() {
-           $('nav li a.active').removeClass('active');
-           $($(this).attr('href')).addClass('active');
-        });
-     });
-  </script>
+
       
     </head>
 <body>
@@ -65,9 +48,11 @@
     
     <script>
      $(function() {
-        $('#nav li a').click(function() {
-           $('#nav li').removeClass();
-           $($(this).attr('href')).addClass('active');
+         
+        $('.nav li a').click(function() {
+           
+           $('nav li a.active').removeClass('active');
+           $(this).addClass('active');
         });
      });
   </script>
