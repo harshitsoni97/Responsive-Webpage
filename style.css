@@ -112,9 +112,20 @@ nav .logo{
     
 }
 
+nav .logo .H{
+    font-size: 100%;
+    transition: 3s;
+    
+}
+
 nav.black .logo{
     color: #fff;
-    
+        
+}
+nav.black .logo .H{
+    font-size: 150%;
+    transition: 3s;
+        
 }
 nav ul{
     list-style: none;
@@ -160,4 +171,17 @@ nav ul li a.active{
     background: red;
     color: #fff;
     border-radius: 6px;
+}
+@keyframes text{
+    0% {font-size: 100%;}
+    50% {font-size: 150%;}
+    100% {font-size: 100%;}
+}
+
+.H{
+    
+    animation-name: text;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    
 }
