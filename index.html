@@ -1,4 +1,4 @@
-<!DCOTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Full Screen Landing Page</title>
@@ -17,8 +17,8 @@
     </script>
          <script>
      $(function() {
-        $('#nav li a').click(function() {
-           $('#nav li').removeClass();
+        $('nav li a').click(function() {
+           $('nav li a.active').removeClass('active');
            $($(this).attr('href')).addClass('active');
         });
      });
@@ -32,7 +32,7 @@
             <div class="logo">LOGO</div>    
         
         <ul class="nav">
-            <li><a href="#" onclick="chk();" id="1">Home</a></li>
+            <li><a href="#" onclick="chk();" class="active" id="1">Home</a></li>
             <li><a href="#" id="2" onclick="chk();">About</a></li>
             <li><a href="#" id="3" onclick="chk();">Contact</a></li>
         </ul>
@@ -41,7 +41,7 @@
     <section class="intro">
     <div class="inner">
         <div class="Content">
-        <h1>Breath Easy</h1>
+        <h1>Lorem Ipsum</h1>
             <a href="#" class="btnm">Get Started</a>
         </div>
     </div>
