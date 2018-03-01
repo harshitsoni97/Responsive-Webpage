@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.intro{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url('http://1.bp.blogspot.com/-q22GbezZbVY/URVQrgNb3HI/AAAAAAAAFTM/eZThBhtoKts/s1600/summer_rain_forest-wallpaper-2560x1600.jpg') fixed;
+    display: table;
+    top: 0;
+    background-size: cover;
+    
+    
+}
+.intro .inner{
+    
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.Content{
+max-width: 500px;
+    margin: auto;
+    text-align: center;
+    
+    
+}
+
+.Content h1{
+    font-family: 'Raleway',sans-serif;
+    color: #F9F3F4;
+    font-size: 500%;
+    text-shadow: 0px 0px 300px #000; 
+}
+
+.btnm{
+    border-radius: 9px;
+    font-family: 'Oswald',sans-serif;
+    color: green;
+    font-size: 135%;
+    padding: 10px 20px;
+    border: solid green 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    
+}
+.btnm:hover{
+    color: white;
+    border: solid white 3px;
+    transition-delay: 20;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+p{
+    padding-top: 80px;
+    margin-top: 80px;
+    font-size:160%;
+    padding-left: 100px;
+    padding-right: 100px;
+    line-height: 40px;
+    text-align: justify;
+    margin: 3%;
+    font-family: sans-serif;
+}
+
+
+
+.m{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .3s; 
+}
+.m.black{
+    background: rgba(0,0,0,0.8);
+    height: 100px;
+    padding: 10px 100px;
+}
+.m .logo{
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    transition: .3s;
+    color: white
+    
+}
+
+.m .logo .H{
+    font-size: 100%;
+    transition: 3s;
+    
+}
+
+.m.black .logo{
+    color: #fff;
+        
+}
+.m.black .logo .H{
+    font-size: 150%;
+    transition: 3s;
+        
+}
+.m ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.m ul li{
+    list-style: none;
+    
+}
+
+.m ul li a{
+    line-height: 80px;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+    outline: none;
+}
+.m.black ul li a{
+    color: #fff;
+    
+}
+.m ul li a:hover{
+    text-decoration: none;
+    color: gray;
+    font-size: 170%;
+    
+}
+.m ul li a:focus{
+    outline: none;
+    
+
+}
+
+.m ul li a.active{
+    
+    
+    background: red;
+    color: #fff;
+    border-radius: 6px;
+}
+@keyframes text{
+    0% {font-size: 100%;}
+    50% {font-size: 150%;}
+    100% {font-size: 100%;}
+}
+
+.H{
+    
+    animation-name: text;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    
+}
